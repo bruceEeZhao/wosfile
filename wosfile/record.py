@@ -117,4 +117,5 @@ def records_from(
 
     """
     for wos_record in read(fname, **kwargs):
+        #print(wos_record)
         yield Record(wos_record, skip_empty)
